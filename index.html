@@ -1,20 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetic Shop</title>
 
-    <!-- Import css -->
-    <link rel="stylesheet" href="./assets/css/index.css">
-</head>
-<body>
-    <div class="slider">
 
+    <!-- Import Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- Import OWL CSS  -->
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div class="nav-bar container">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/image/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li>
+                        <a href="">Sản phẩm
+                            <i class="fa-solid fa-chevron-down icon-rotate"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="">Kem dưỡng da</a></li>
+                            <li><a href="">Sữa rửa mặt</a></li>
+                            <li><a href="">Dầu gội</a></li>
+                            <li><a href="">Sữa tắm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Tin tức</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slider-banner owl-carousel owl-theme">
+            <div class="item-slider">
+                <img src="./assets/image/slider_1.png" alt="">
+            </div>
+            <div class="item-slider">
+                <img src="./assets/image/slider_2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner container">
+        <a href="">
+            <img src="assets/image/banner_service.png" alt="">
+        </a>
+        <div class="services">
+            <div class="service">
+                <div>
+                    <img src="assets/image/1.png" alt="">
+                </div>
+                <div class="content-service">
+                    <h5>Thanh toán</h5>
+                    <p>Khách hàng có thể lựa chọn một hoặc nhiều hình thức thanh toán</p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <img src="assets/image/2.png" alt="">
+                </div>
+                <div class="content-service">
+                    <h5>Cam kết chính hãng</h5>
+                    <p>Chúng tôi cam kết hàng chính hãng và đảm bảo về chất lượng sản phẩm</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-img">
+                    <img src="assets/image/3.png" alt="">
+                </div>
+                <div class="content-service">
+                    <h5>Siêu tốc 2h</h5>
+                    <p>Dịch vụ giao hàng nhanh 2h trong nội thành Hà Nội</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand -->
+    <div class="brand container">
+        <h3>Thương hiệu nổi bật</h3>
+        <div class="list-brand">
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_1.png" alt="">
+            </div>
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_2.png" alt="">
+            </div>
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_3.png" alt="">
+            </div>
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_4.png" alt="">
+            </div>
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_5.png" alt="">
+            </div>
+            <div class="img-brand">
+                <img src="./assets/image/img_brand_6.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotion -->
+    <div class="promotion container">
+        <div class="promotion-title">
+            <h5>Khuyến mãi</h5>
+        </div>
+        <div class="promotion-content">
+            <div class="slider-promotion owl-carousel owl-theme list-product">
+                <div class="item">
+                    <div class="img-item">
+                        <img src="./assets/image/product1.png" alt="">
+                        <div class="add-to-cart">
+                            <div class="select-quantity">
+                                <button class="btn-decrease">-</button>
+                                <input class="quantity" type="text" value="1">
+                                <button class="btn-increase">+</button>
+                            </div>
+                            <button class="btn-add">Thêm</button>
+                        </div>
+                    </div>
+                    <div class="infor-product">
+                        <h5>San pham 1</h5>
+                        <p><s>102.000vnd</s>  101.000vnd</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-item">
+                        <img src="./assets/image/product2.png" alt="">
+                        <div class="add-to-cart">
+                            <div class="select-quantity">
+                                <button class="btn-decrease">-</button>
+                                <input class="quantity" type="text" value="1">
+                                <button class="btn-increase">+</button>
+                            </div>
+                            <button class="btn-add">Thêm</button>
+                        </div>
+                    </div>
+                    <div class="infor-product">
+                        <h5>San pham 1</h5>
+                        <p><s>102.000vnd</s>  101.000vnd</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-item">
+                        <img src="./assets/image/product3.png" alt="">
+                        <div class="add-to-cart">
+                            <div class="select-quantity">
+                                <button class="btn-decrease">-</button>
+                                <input class="quantity" type="text" value="1">
+                                <button class="btn-increase">+</button>
+                            </div>
+                            <button class="btn-add">Thêm</button>
+                        </div>
+                    </div>
+                    <div class="infor-product">
+                        <h5>San pham 1</h5>
+                        <p><s>102.000vnd</s>  101.000vnd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion-banner">
+                <img src="./assets/image/promotion.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- New merchandise -->
+    <div class="new-product container">
+        <div class="product-title">
+            <h5>Hàng mới về</h5>
+        </div>
+        <div class="slider-new-product owl-carousel owl-theme list-product">
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise1.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise2.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise3.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise4.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise5.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+            <div class="item-new-product">
+                <div class="img-item-new">
+                    <img src="./assets/image/merchandise6.png" alt="">
+                    <div class="detail">
+                        <button class="btn-detail">Chi tiết</button>
+                    </div>
+                </div>
+                <div class="new-product-inf">
+                    <h5>San pham 2</h5>
+                    <p>101.000vnd</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Selling -->
+    <div class="best-seller container">
+        <div class="best-seller-title">
+            <h5>Sản phẩm bán chạy</h5>
+        </div>
     </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Import JQuery -->
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+
+    <!-- Import OWL JS -->
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Import Bootstrap JS -->
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
